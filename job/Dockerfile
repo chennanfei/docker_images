@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     curl
 
+RUN ssh -T bitbucket.org
+
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
