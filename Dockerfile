@@ -5,7 +5,7 @@ FROM ubuntu:14.04
 COPY requirements.txt .
 # RUN pip install -r /requirements.txt
 
-COPY . /app
-
 EXPOSE 8080
 CMD ["/bin/bash"]
+
+COPY . /app
